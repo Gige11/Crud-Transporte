@@ -1,0 +1,151 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f8f9fa;
+    width: 100% !important;
+}
+
+.main {
+    margin-bottom: 100px;
+}
+
+.btn-custom {
+    background-color: #FF5733;
+    border-color: #FF5733;
+    color: white;
+}
+
+.btn-custom:hover {
+    background-color: #FF4500;
+    border-color: #FF4500;
+}
+
+label {
+    font-weight: bold;
+}
+
+.custom-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.btn-nuevo {
+    background-color: #FF4500;
+    border: none;
+    color: #ffffff;
+}
+
+.btn-nuevo:hover {
+    background-color: #d43f04;
+    color: white
+}
+
+.table thead th {
+    border: none;
+    color: white;
+    background-color: #333;
+}
+
+.icono-editar {
+    color: #F0AD4E; 
+}
+
+.icono-borrar {
+    color: #D9534F; 
+}
+
+.container-fluid {
+    flex: 1;
+}
+
+.paginacion {
+    margin-bottom: 60px; 
+}
+
+.paginacion .pagination .page-item .page-link.bg-orangered {
+    background-color: orangered !important;
+    color: white !important;
+}
+
+.paginacion .pagination .page-item .page-link.text-black {
+    color: black !important;
+}
+
+.bg-orangered {
+    background-color: orangered !important; 
+}
+
+.text-black {
+    color: #000 !important; 
+}
+
+.text-white {
+    color: #fff !important; 
+}
+
+.custom-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.custom-pagination .page-link {
+    color: #333;
+    background-color: #f8f9fa;
+    border: 1px solid #ccc;
+    padding: 8px 12px;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.custom-pagination .page-link:hover {
+    background-color: orangered;
+    color: #fff;
+    border-color: #007bff;
+}
+
+.custom-pagination .page-item.active .page-link {
+    background-color: orangered;
+    color: #fff;
+    border-color: orange;
+}
+
+/* Responsividad */
+
+@media (max-width: 768px) {
+    .main {
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 576px) {
+    .btn-custom {
+        padding: 5px 10px;
+        font-size: 14px;
+    }
+    
+    label {
+        font-size: 14px;
+    }
+
+    .custom-pagination {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .custom-pagination .page-link {
+        padding: 5px 8px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 992px) { 
+    footer {
+        display: none;
+    }
+}
